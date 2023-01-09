@@ -7,7 +7,7 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
                             <h1>BLOGGER SEKOLAH</h1>
-                            <span class="subheading">Bermacam - macam informasi sekolahz ada disini</span>
+                            <span class="subheading">Bermacam - macam informasi sekolah ada disini</span>
                         </div>
                     </div>
                 </div>

@@ -1,14 +1,15 @@
 @extends('layouts.main')
+@section('isihalaman')
 
 <div class="hero hero-single route bg-image" style="background-image: url(/assets/img/overlay-bg.jpg)">
   <div class="overlay-mf"></div>
   <div class="hero-content display-table">
     <div class="table-cell">
       <div class="container">
-        <h2 class="hero-title mb-4">INFORMASI DETAIL</h2>
+        <h2 class="hero-title mb-4">INFORMASI LENGKAP</h2>
         <ol class="breadcrumb d-flex justify-content-center">
           <li class="breadcrumb-item">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li class="breadcrumb-item">
             <a href="#">{{ $post->slug }}</a>
@@ -18,7 +19,6 @@
     </div>
   </div>
 </div>
-@section('isihalaman')
 <main id="main">
 <!-- ======= Blog Single Section ======= -->
 <section class="blog-wrapper sect-pt4" id="blog">
@@ -129,8 +129,8 @@
         </div>
         <div class="form-comments">
           <div class="title-box-2">
-            <h3 class="title-left">
-              Leave a Reply
+            <h3 class="title-left text-black">
+              Tinggalkan balasan
             </h3>
           </div>
           <form class="form-mf">
@@ -156,30 +156,15 @@
                 </div>
               </div>
               <div class="col-md-12">
-                <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                <button type="submit" class="button button-a button-big button-rouded">Kirim pesan</button>
               </div>
             </div>
           </form>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="widget-sidebar sidebar-search">
-          <h5 class="sidebar-title">Search</h5>
-          <div class="sidebar-content">
-            <form>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
-                <span class="input-group-btn">
-                  <button class="btn btn-secondary btn-search" type="button">
-                    <span class="fa-solid fa-magnifying-glass"></span>
-                  </button>
-                </span>
-              </div>
-            </form>
-          </div>
-        </div>
         <div class="widget-sidebar">
-          <h5 class="sidebar-title">Recent Post</h5>
+          <h5 class="sidebar-title">Postingan terkini</h5>
           <div class="sidebar-content">
             <ul class="list-sidebar">
               <li>
@@ -200,30 +185,8 @@
             </ul>
           </div>
         </div>
-        <div class="widget-sidebar">
-          <h5 class="sidebar-title">Archives</h5>
-          <div class="sidebar-content">
-            <ul class="list-sidebar">
-              <li>
-                <a href="#">September, 2017.</a>
-              </li>
-              <li>
-                <a href="#">April, 2017.</a>
-              </li>
-              <li>
-                <a href="#">Nam quo autem exercitationem.</a>
-              </li>
-              <li>
-                <a href="#">Atque placeat maiores nam quo autem</a>
-              </li>
-              <li>
-                <a href="#">Nam quo autem exercitationem.</a>
-              </li>
-            </ul>
-          </div>
-        </div>
         <div class="widget-sidebar widget-tags">
-          <h5 class="sidebar-title">Tags</h5>
+          <h5 class="sidebar-title">Kategori</h5>
           <div class="sidebar-content">
             <ul>
               <li>
@@ -258,7 +221,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content ">
       <div class="modal-header">
-        <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Login</h1>
+        <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Masuk</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -274,13 +237,13 @@
           <label class="form-label text-secondary" for="typePasswordX">Password</label>
         </div>
         <div>
-          <p class="mb-0 text-secondary">Tidak punya akun? <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModalR" class="text-primary-50 fw-bold">Register</a>
+          <p class="mb-0 text-secondary">Tidak punya akun? <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModalR" class="text-primary-50 fw-bold">Daftar</a>
           </p>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <button type="submit" class="btn btn-primary">Masuk</button>
       </div>
     </form>
     </div>
@@ -293,7 +256,7 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content ">
         <div class="modal-header">
-          <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Register</h1>
+          <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Daftar</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -366,13 +329,13 @@ window.onload = function(){
           </div>
           
           <div>
-            <p class="mb-0 text-secondary">Sudah mempunyai akun? <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-primary-50 fw-bold">Login</a>
+            <p class="mb-0 text-secondary">Sudah mempunyai akun? <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-primary-50 fw-bold">Masuk</a>
             </p>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" id="submit" class="btn btn-primary" >Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="submit" id="submit" class="btn btn-primary" >Daftar</button>
         </div>
       </form>
       </div>
@@ -401,14 +364,14 @@ aria-hidden="true">
 <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title text-black" id="exampleModalLabel">Ready to Leave?</h5>
+            <h5 class="modal-title text-black" id="exampleModalLabel">Yakin Untuk Keluar?</h5>
         </div>
-        <div class="modal-body">Apakah yakin untuk logout?</div>
+        <div class="modal-body">Apakah yakin untuk keluar?</div>
         <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Batal</button>
             <form action="/logout" method="post">
               @csrf
-              <button class="btn btn-danger" type="submit">Logout</button>
+              <button class="btn btn-danger" type="submit">Keluar</button>
             </form>
         </div>
     </div>

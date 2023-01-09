@@ -29,19 +29,13 @@
               <div class="col-md-6">
                 <div class="row">
                   <div class="col-sm-6 col-md-5">
-                    @if ($user->avatar)
                     <div class="about-img">
                       <img src="{{ asset('storage/' . $user->avatar) }}" class="img-thumbnail" alt="">
                     </div>
-                    @else
-                    <div class="about-img">
-                      <img src="https://ui-avatars.com/api/?name={{ $user->name }}&background=random&color=random" class="img-thumbnail" alt="">
-                    </div>
-                    @endif
                   </div>
                   <div class="col-sm-6 col-md-7">
                     <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>{{ $user->name }}</span></p>
+                      <p><span class="title-s">Nama: </span> <span>{{ $user->name }}</span></p>
                       <p><span class="title-s">Profile: </span> <span>Mahasiswa</span></p>
                       <p><span class="title-s">Email: </span> <span>{{ $user->email }}</span></p>
                       <p><span class="title-s">Phone: </span> <span>-</span></p>
@@ -72,7 +66,7 @@
                 <div class="about-me pt-4 pt-md-0">
                   <div class="title-box-2">
                     <h5 class="title-left text-black">
-                      About me
+                      Tentang saya
                     </h5>
                   </div>
                   <p class="lead">
@@ -117,7 +111,7 @@
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="/posts/{{ $post->slug }}"><img src="{{ $post->picture }}" alt="" class="img-fluid"></a>
+                <a href="/posts/{{ $post->slug }}"><img src="{{ asset('storage/'. $post->image) }}" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -134,7 +128,7 @@
               <div class="card-footer">
                 <div class="post-author">
                   <a href="/profiles/{{ $post->user->username }}">
-                    <img src="{{ $post->user->picture }}" alt="" class="avatar rounded-circle">
+                    <img src="{{ asset('storage/' . $post->user->avatar) }}" alt="" class="avatar rounded-circle">
                     <span class="author">{{ $post->user->name }}</span>
                   </a>
                 </div>
@@ -162,14 +156,14 @@ aria-hidden="true">
 <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title text-black" id="exampleModalLabel">Ready to Leave?</h5>
+            <h5 class="modal-title text-black" id="exampleModalLabel">Yakin Untuk Keluar?</h5>
         </div>
-        <div class="modal-body">Apakah yakin untuk logout?</div>
+        <div class="modal-body">Apakah yakin untuk keluar?</div>
         <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Batal</button>
             <form action="/logout" method="post">
               @csrf
-              <button class="btn btn-danger" type="submit">Logout</button>
+              <button class="btn btn-danger" type="submit">Keluar</button>
             </form>
         </div>
     </div>
