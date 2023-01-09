@@ -2,17 +2,17 @@
 @section('isihalaman')
         <!-- Page Header-->
         <header class="masthead" style="background-image: url('/assets/img/home-bg.jpg')">
-            <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-                            <h1>Blog Nusantara</h1>
-                            <span class="subheading">Bermacam - macam informasi ada disini</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+          <div class="container position-relative px-4 px-lg-5">
+              <div class="row gx-4 gx-lg-5 justify-content-center">
+                  <div class="col-md-10 col-lg-8 col-xl-7">
+                      <div class="site-heading">
+                          <h1>BLOGGER SEKOLAH</h1>
+                          <span class="hero-subtitle"><span class="typed" data-typed-items="Bermacam - macam informasi tentang sekolah ada disini"></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
         <!-- Main Content-->
         <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog-mf sect-pt4 route">
@@ -35,7 +35,7 @@
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="/posts/{{ $post->slug }}"><img src="{{ $post->picture }}" alt="" class="img-fluid"></a>
+                <a href="/posts/{{ $post->slug }}"><img src="{{ asset('storage/'. $post->image) }}" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -51,7 +51,7 @@
               <div class="card-footer">
                 <div class="post-author">
                   <a href="/profiles/{{ $post->user->username }}">
-                    <img src="{{ $post->user->picture }}" alt="" class="avatar rounded-circle">
+                    <img src="{{ asset('storage/' . $post->user->avatar) }}" alt="" class="avatar rounded-circle">
                     <span class="author">{{ $post->user->name }}</span>
                   </a>
                 </div>

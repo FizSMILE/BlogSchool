@@ -101,7 +101,7 @@ hr:not([size]) {
   height: 1px;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -4647,6 +4647,7 @@ textarea.form-control-lg {
   padding-right: 0.5rem;
   color: #6c757d;
   content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+  font-size: 16px;
 }
 .breadcrumb-item.active {
   color: #6c757d;
@@ -11015,6 +11016,7 @@ p a {
 blockquote {
   font-style: italic;
   color: #6c757d;
+  margin-top: -5px;
 }
 
 .btn {
@@ -11736,12 +11738,17 @@ a:hover {
 .title-a {
   text-decoration: none;
   font-size: 3rem;
+  color: #000;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .subtitle-a {
   text-decoration: none;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  margin: 16px ;
   color: #4e4e4e;
 }
 
@@ -11977,17 +11984,6 @@ h6 {
   color: #fff;
 }
 
-a {
-  color: #1e1e1e;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-
-a:hover {
-  color: #0078ff;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
 
 .p-r {
   position: relative;
@@ -12005,166 +12001,6 @@ a:hover {
 .color-text-a {
   text-decoration: none;
   color: #4e4e4e;
-}
-
-.box-shadow,
-.card-blog,
-.work-box,
-.service-box,
-.paralax-mf {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-}
-
-.box-shadow-a,
-.button:hover {
-  text-decoration: none;
-  box-shadow: 0 0 0 4px #cde1f8;
-}
-
-.display-5 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.display-6 {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-  margin-right: 4px;
-  overflow: hidden;
-}
-
-.bg-image {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
-
-@media (max-width: 1024px) {
-  .bg-image {
-    background-attachment: scroll;
-  }
-}
-
-.overlay-mf {
-  background-color: #0078ff;
-}
-
-.overlay-mf {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.7;
-}
-
-.paralax-mf {
-  position: relative;
-  padding: 8rem 0;
-}
-
-.display-table {
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-
-.table-cell {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/*--/ Sections /--*/
-.sect-4 {
-  padding: 4rem 0;
-}
-
-.sect-pt4 {
-  padding-top: 4rem;
-}
-
-.sect-mt4 {
-  margin-top: 4rem;
-}
-
-/*--/ Title s /--*/
-.title-s {
-  font-weight: 600;
-  color: #1e1e1e;
-  font-size: 1.1rem;
-}
-
-/*--/ Title A /--*/
-.title-box {
-  margin-bottom: 4rem;
-}
-
-.title-a {
-  text-decoration: none;
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #495057;
-}
-
-.subtitle-a {
-  text-decoration: none;
-  color: #4e4e4e;
-}
-
-.line-mf {
-  width: 40px;
-  height: 5px;
-  background-color: #0078ff;
-  margin: 0 auto;
-}
-
-/*--/ Title Left /--*/
-.title-box-2 {
-  margin-bottom: 3rem;
-}
-
-.title-left {
-  font-size: 2rem;
-  position: relative;
-}
-
-.title-left:before {
-  content: "";
-  position: absolute;
-  height: 3px;
-  background-color: #0078ff;
-  width: 100px;
-  bottom: -12px;
-}
-
-/*------/ Box /------*/
-.box-pl2 {
-  padding-left: 2rem;
-}
-
-.box-shadow-full {
-  padding: 3rem 1.25rem;
-  position: relative;
-  background-color: #fff;
-  margin-bottom: 3rem;
-  z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-@media (min-width: 768px) {
-  .box-shadow-full {
-    padding: 3rem;
-  }
 }
 
 /*------/ Socials /------*/
@@ -12836,15 +12672,11 @@ font: 400 14px/24px "Open Sans", sans-serif;
 
 .blog-wrapper .article-title {
   font-size: 1.5rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #000;
+  margin: 8px;
 }
 
-@media (min-width: 768px) {
-  .blog-wrapper .article-title {
-    font-size: 1.9rem;
-    color: #000;
-  }
-}
 
 .blog-wrapper .post-meta {
   margin: 1rem 0;
@@ -12880,7 +12712,10 @@ font: 400 14px/24px "Open Sans", sans-serif;
 }
 
 .title-comments {
-  color: #000;
+  font-size: 32px;
+  color: #1e1e1e;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 8px;
 }
 
 .box-comments .list-comments .comment-avatar {
@@ -12894,14 +12729,17 @@ font: 400 14px/24px "Open Sans", sans-serif;
 }
 
 .box-comments .list-comments .comment-author {
-  font-size: 1.3rem;
-  color: #000;
+  font-size: 24px;
+  color: #1e1e1e;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 @media (min-width: 768px) {
   .box-comments .list-comments .comment-author {
-    font-size: 1.5rem;
-    color: #000;
+    font-size: 24px;
+    color: #1e1e1e;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 }
 
@@ -12918,6 +12756,8 @@ font: 400 14px/24px "Open Sans", sans-serif;
 .box-comments .list-comments span {
   color: #1e1e1e;
   font-style: italic;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
 }
 
 .box-comments .comment-children {
@@ -13483,6 +13323,13 @@ footer .credits a {
   margin-bottom: 0;
 }
 
+.author-a {
+color: #1e1e1e;
+font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 18px;
+}
+
+
 .card-blog .card-title {
   font-size: 1.3rem;
   margin-top: 0.6rem;
@@ -13490,7 +13337,17 @@ footer .credits a {
 
 .card-blog .card-description {
   color: #4e4e4e;
+  margin: 0%;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
 }
+
+/* .author-t {
+  color: #4e4e4e;
+  margin: 0%;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+} */
 
 .card-blog .post-author {
   display: inline-block;
@@ -13504,112 +13361,10 @@ footer .credits a {
   /* margin: 5px auto;
   margin-left: 5rem; */
   /* text mono */
-  font-family: monospace;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
 }
 
-/*--------------------------------------------------------------
-# Blog Single
---------------------------------------------------------------*/
-.post-box,
-.form-comments,
-.box-comments,
-.widget-sidebar {
-  padding: 2rem;
-  background-color: #fff;
-  margin-bottom: 3rem;
-}
-
-@media (min-width: 768px) {
-
-  .post-box,
-  .form-comments,
-  .box-comments,
-  .widget-sidebar {
-    padding: 3rem;
-  }
-}
-
-.blog-wrapper .article-title {
-  font-size: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .blog-wrapper .article-title {
-    font-size: 1.9rem;
-  }
-}
-
-.blog-wrapper .post-meta {
-  margin: 1rem 0;
-}
-
-.blog-wrapper .post-meta ul {
-  border-left: 4px solid #0078ff;
-  margin-top: 1rem;
-}
-
-.blog-wrapper .post-meta ul li {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.blog-wrapper .post-meta ul a {
-  color: #0078ff;
-}
-
-.blog-wrapper .post-meta ul span {
-  color: #1e1e1e;
-}
-
-.blog-wrapper .blockquote {
-  border-left: 4px solid #0078ff;
-  padding: 18px;
-  font-style: italic;
-}
-
-/*------/ Comments /------*/
-.box-comments .list-comments li {
-  padding-bottom: 40px;
-}
-
-.box-comments .list-comments .comment-avatar {
-  display: table-cell;
-  vertical-align: top;
-}
-
-.box-comments .list-comments .comment-avatar img {
-  width: 80px;
-  height: 80px;
-}
-
-.box-comments .list-comments .comment-author {
-  font-size: 1.3rem;
-}
-
-@media (min-width: 768px) {
-  .box-comments .list-comments .comment-author {
-    font-size: 1.5rem;
-  }
-}
-
-.box-comments .list-comments .comment-details {
-  display: table-cell;
-  vertical-align: top;
-  padding-left: 25px;
-}
-
-.box-comments .list-comments a {
-  color: #0078ff;
-}
-
-.box-comments .list-comments span {
-  color: #1e1e1e;
-  font-style: italic;
-}
-
-.box-comments .comment-children {
-  margin-left: 40px;
-}
 
 /*------/ Sidebar /------*/
 .widget-sidebar .sidebar-title {
@@ -13664,4 +13419,57 @@ footer .credits a {
 
 
 
+/* FIZZ CSS */
+.f-16px {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+}
 
+.f-16px-primary {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+color: #0078ff;
+}
+
+.p-article {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+color: #4e4e4e;
+margin: 16px;
+}
+.ulicon {
+  margin: 16px;
+  font-size: 16px;
+}
+
+
+.blog-wrapper .blockquote-new {
+  border-left: 4px solid #0078ff;
+  padding: 18px;
+  font-style: italic;
+}
+.p-comment {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+color: #4e4e4e;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+.reply {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+color: #0078ff;
+}
+
+.f-16px-1e1e1e {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+color: #1e1e1e;
+}
+
+.f-16px-white {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+color: #fff;
+}

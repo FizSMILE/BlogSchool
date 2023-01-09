@@ -9,10 +9,10 @@
         <h2 class="hero-title mb-4">INFORMASI LENGKAP</h2>
         <ol class="breadcrumb d-flex justify-content-center">
           <li class="breadcrumb-item">
-            <a href="/">Home</a>
+            <a class="f-16px" href="/">Home</a>
           </li>
           <li class="breadcrumb-item">
-            <a href="#">{{ $post->slug }}</a>
+            <a class="f-16px" href="#">{{ $post->slug }}</a>
           </li>
         </ol>
       </div>
@@ -31,27 +31,27 @@
           </div>
           <div class="post-meta">
             <h1 class="article-title">{{ $post->title }}</h1>
-            <ul>
+            <ul class="ulicon">
               <li>
-                <span class="fa-regular fa-user"></span> 
-                <a href="#">{{ $post->user->name }}</a>
+                <span class="bi bi-person"></span>
+                <a class="f-16px-primary" href="#">{{ $post->user->name }}</a>
               </li>
               <li>
-                <span class="fa-sharp fa-solid fa-tags"></span> 
-                <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
+                <span class="bi bi-tag"></span>
+                <a class="f-16px-primary" href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
               </li>
               <li>
-                <span class="fa-regular fa-comments"></span>
-                <a href="#">14</a>
+                <span class="bi bi-chat-left-text"></span>
+                <a class="f-16px-primary" href="#">14</a>
               </li>
             </ul>
           </div>
-          <div class="article-content">
+          <div class="p-article">
             {!! $post->body !!}
-            <blockquote class="blockquote">
-              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <blockquote class="blockquote-new">
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             </blockquote>
-            <p>
+            <p class="p-article">
               Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Mauris blandit
               aliquet elit, eget tincidunt
               nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet,
@@ -71,12 +71,12 @@
               <div class="comment-details">
                 <h4 class="comment-author">Oliver Colmenares</h4>
                 <span>18 Sep 2017</span>
-                <p>
+                <p class="p-comment">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque
                   ipsam temporibus maiores
                   quae natus libero optio, at qui beatae ducimus placeat debitis voluptates amet corporis.
                 </p>
-                <a href="3">Reply</a>
+                <a class="reply" href="3">Reply</a>
               </div>
             </li>
             <li>
@@ -86,13 +86,13 @@
               <div class="comment-details">
                 <h4 class="comment-author">Carmen Vegas</h4>
                 <span>18 Sep 2017</span>
-                <p>
+                <p class="p-comment">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque
                   ipsam temporibus maiores
                   quae natus libero optio, at qui beatae ducimus placeat debitis voluptates amet corporis,
                   veritatis deserunt.
                 </p>
-                <a href="3">Reply</a>
+                <a class="reply" href="3">Reply</a>
               </div>
             </li>
             <li class="comment-children">
@@ -102,12 +102,12 @@
               <div class="comment-details">
                 <h4 class="comment-author">Oliver Colmenares</h4>
                 <span>18 Sep 2017</span>
-                <p>
+                <p class="p-comment">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque
                   ipsam temporibus maiores
                   quae.
                 </p>
-                <a href="3">Reply</a>
+                <a class="reply" href="3">Reply</a>
               </div>
             </li>
             <li>
@@ -117,19 +117,19 @@
               <div class="comment-details">
                 <h4 class="comment-author">Oliver Colmenares</h4>
                 <span>18 Sep 2017</span>
-                <p>
+                <p class="p-comment">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque
                   ipsam temporibus maiores
                   quae natus libero optio.
                 </p>
-                <a href="3">Reply</a>
+                <a class="reply" href="3">Reply</a>
               </div>
             </li>
           </ul>
         </div>
         <div class="form-comments">
           <div class="title-box-2">
-            <h3 class="title-left text-black">
+            <h3 class="title-comments title-left">
               Tinggalkan balasan
             </h3>
           </div>
@@ -168,19 +168,19 @@
           <div class="sidebar-content">
             <ul class="list-sidebar">
               <li>
-                <a href="#">Atque placeat maiores.</a>
+                <a class="f-16px-1e1e1e" href="#">Atque placeat maiores.</a>
               </li>
               <li>
-                <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+                <a class="f-16px-1e1e1e" href="#">Lorem ipsum dolor sit amet consectetur</a>
               </li>
               <li>
-                <a href="#">Nam quo autem exercitationem.</a>
+                <a class="f-16px-1e1e1e" href="#">Nam quo autem exercitationem.</a>
               </li>
               <li>
-                <a href="#">Atque placeat maiores nam quo autem</a>
+                <a class="f-16px-1e1e1e" href="#">Atque placeat maiores nam quo autem</a>
               </li>
               <li>
-                <a href="#">Nam quo autem exercitationem.</a>
+                <a class="f-16px-1e1e1e" href="#">Nam quo autem exercitationem.</a>
               </li>
             </ul>
           </div>
@@ -190,22 +190,22 @@
           <div class="sidebar-content">
             <ul>
               <li>
-                <a href="#">Web.</a>
+                <a class="f-16px-white" href="#">Web.</a>
               </li>
               <li>
-                <a href="#">Design.</a>
+                <a class="f-16px-white" href="#">Design.</a>
               </li>
               <li>
-                <a href="#">Travel.</a>
+                <a class="f-16px-white" href="#">Travel.</a>
               </li>
               <li>
-                <a href="#">Photoshop</a>
+                <a class="f-16px-white" href="#">Photoshop</a>
               </li>
               <li>
-                <a href="#">Corel Draw</a>
+                <a class="f-16px-white" href="#">Corel Draw</a>
               </li>
               <li>
-                <a href="#">JavaScript</a>
+                <a class="f-16px-white" href="#">JavaScript</a>
               </li>
             </ul>
           </div>

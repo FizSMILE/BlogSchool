@@ -5,9 +5,7 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 {{-- New Code --}}
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    
+<nav id="navbar" class="navbar navbar-expand-lg"> 
     @auth
     <div class="nav-item dropdown ">
       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,17 +32,12 @@
       </ul>
     </div>
     @else
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon button-white"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Masuk</a>
-        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalR">Daftar</a>
-      </div>
-    </div>
+     <ul>
+        <li><a class="nav-link scrollto" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Masuk</a></li>
+        <li><a class="nav-link scrollto" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalR">Daftar</a></li>
+        </ul>
     @endauth
-  </div>
+  <i class="bi bi-list mobile-nav-toggle"></i>
 </nav>
  
     </div>

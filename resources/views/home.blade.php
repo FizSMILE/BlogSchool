@@ -1,13 +1,13 @@
 @extends('layouts.main')
 @section('isihalaman')
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+        <header class="masthead" style="background-image: url('/assets/img/home-bg.jpg')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
                             <h1>BLOGGER SEKOLAH</h1>
-                            <span class="subheading">Bermacam - macam informasi sekolah ada disini</span>
+                            <span class="hero-subtitle"><span class="typed" data-typed-items="Bermacam - macam informasi tentang sekolah ada disini"></span>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <h6 class="category">{{ $post->category->name  }}</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="/posts/{{ $post->slug }}">{{ $post->title }}</a></h3>
+                <h3 class="card-title"><a class="card-ta" href="/posts/{{ $post->slug }}">{{ $post->title }}</a></h3>
                 <p class="card-description">
                   {{ $post->excerpt }}
                   <a class="link-primary text-decoration-none" href="/posts/{{ $post->slug }}">Baca Selengkapnya..</a>
@@ -63,9 +63,9 @@
               </div>
               <div class="card-footer">
                 <div class="post-author">
-                  <a href="/profiles/{{ $post->user->username }}">
+                  <a class="author-a" href="/profiles/{{ $post->user->username }}">
                     <img src="{{ asset('storage/' . $post->user->avatar) }}" alt="" class="avatar rounded-circle">
-                    <span class="author">{{ $post->user->name }}</span>
+                    <span class="author-t">{{ $post->user->name }}</span>
                   </a>
                 </div>
                 <div class="post-date">
