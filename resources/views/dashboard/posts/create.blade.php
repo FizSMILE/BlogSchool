@@ -10,8 +10,8 @@
             <div class="card-body py-0 px-0 px-sm-3">
               <div class="row align-items-center"> 
                 <div class="col-5 col-sm-7 col-xl-8 p-0">
-                  <h2 class="mb-1 mt-4 mx-5 mb-sm-0">Hello , {{ auth()->user()->name }}</h2>
-                  <h4 class="mb-4 mx-5 font-weight-normal d-none d-sm-block">This Your All Post</h4>
+                  <h2 class="mb-1 mt-4 mx-5 mb-sm-0">Hallo , {{ auth()->user()->name }}</h2>
+                  <h4 class="mb-4 mx-5 font-weight-normal d-none d-sm-block">Ini Adalah Halaman Membuat Postingan</h4>
                 </div>
               </div>
             </div>
@@ -22,7 +22,7 @@
     <form method="post" action="/dashboard/posts" enctype="multipart/form-data">
         @csrf
       <div class="mb-3">
-        <label for="title" class="form-label">Title</label>
+        <label for="title" class="form-label">Judul</label>
         <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" name="title" required autofocus value="{{ old('title') }}">
         @error('title')
         <div class="invalid-feedback">
@@ -40,7 +40,7 @@
         @enderror
       </div>
       <div class="mb-3">
-  <label for="image" class="form-label">Post Image</label>
+  <label for="image" class="form-label">Upload Gambar</label>
   <img class="img-preview img-fluid mb-3 col-sm-5">
   <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image" onchange="previewImage()">
   @error('image')
@@ -50,7 +50,7 @@
         @enderror
 </div>
       <div class="mb-3">
-        <label for="category" class="form-label">Category</label>
+        <label for="category" class="form-label">Kategori</label>
         <select class="form-select" name="category_id" >
             @foreach ($categories as $category)
             @if(old('category_id') == $category->id)
@@ -62,7 +62,7 @@
           </select>
       </div>
       <div class="mb-3 ">
-        <label for="body" class="form-label">Body</label>
+        <label for="body" class="form-label">Konten Postingan</label>
         <input id="body" type="hidden" name="body" value="{{ old('body') }}">
         <trix-editor input="body"></trix-editor>
         @error('body')
@@ -71,7 +71,7 @@
         </p>
         @enderror
       </div>
-      <button type="submit" class="btn btn-primary">Create Post</button>
+      <button type="submit" class="btn btn-primary">Buat Postingan</button>
     </form>
 </div>
     </div>

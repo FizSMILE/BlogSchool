@@ -8,17 +8,17 @@
         <div class="post-box">
           <div class="post-thumb">
             <div class="mb-4">
-            <a class="badge badge-outline-success" type="button" href="/dashboard/posts/"> ← Back to all post</a>
+            <a class="badge badge-outline-success" type="button" href="/dashboard/posts/"> ← Kembali ke semua postingan</a>
             <tr>
               <input type="hidden" class="delete_idS" value="{{ $post->id }}">
               <input type="hidden" class="titleD" value="{{ $post->title }}">
             </tr>
-                        <a class="badge badge-outline-warning" type="button" href="/dashboard/posts/{{ $post->slug }}/edit">Edit</a>
+                        {{-- <a class="badge badge-outline-warning" type="button" href="/dashboard/posts/{{ $post->slug }}/edit">Edit</a>
                         <form action="{{ route('posts.destroy', $post->id) }}" method="POST" class="d-inline">
                           @csrf
                           @method('delete')
                           <button class="badge badge-outline-danger bg-transparent btndeleteD" type="button">Hapus</button>
-                        </form>
+                        </form> --}}
                       </div>
             @if ($post->image)
             <img src="{{ asset('storage/' . $post->image) }}" class="img-fluid" alt="">

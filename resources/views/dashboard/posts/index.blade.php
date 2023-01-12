@@ -10,8 +10,8 @@
               <div class="row align-items-center">
                 
                 <div class="col-5 col-sm-7 col-xl-8 p-0">
-                  <h2 class="mb-1 mt-4 mx-5 mb-sm-0">Hello , {{ auth()->user()->name }}</h2>
-                  <h4 class="mb-4 mx-5 font-weight-normal d-none d-sm-block">This Your All Post</h4>
+                  <h2 class="mb-1 mt-4 mx-5 mb-sm-0">Hallo , {{ auth()->user()->name }}</h2>
+                  <h4 class="mb-4 mx-5 font-weight-normal d-none d-sm-block">Ini Adalah Halaman Semua Postingan anda</h4>
                 </div>
     
               </div>
@@ -23,7 +23,7 @@
         <div class="col-12 grid-margin">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Your All Post</h4>
+              <h4 class="card-title">Semua Postingan Anda</h4>
               <div class="col-5 mb-4">
                 <a class="nav-link btn btn-success create-new-button" aria-expanded="false" href="/dashboard/posts/create">+ Create New Post</a>
               </div>
@@ -32,9 +32,9 @@
                   <thead>
                     <tr>
                       <th class="text-white"># </th>
-                      <th class="text-white"> Title </th>
-                      <th class="text-white"> Category </th>
-                      <th class="text-white"> Action </th>
+                      <th class="text-white"> Judul </th>
+                      <th class="text-white"> Kategori </th>
+                      <th class="text-white"> Aksi </th>
                     </tr>
                   </thead>
                   <tbody>

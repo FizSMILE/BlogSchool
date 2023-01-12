@@ -1,24 +1,20 @@
 <!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-      <a class="sidebar-brand brand-logo" href="index.html"><h1 class="text-white">BN Blog</h1></a>
-      <a class="sidebar-brand brand-logo-mini" href="index.html"><h1 class="text-white">BN</h1></a>
+      <a class="sidebar-brand brand-logo" href="index.html"><h1 class="text-white">BS Blog</h1></a>
+      <a class="sidebar-brand brand-logo-mini" href="index.html"><h1 class="text-white">BS</h1></a>
     </div>
     <ul class="nav">
       <li class="nav-item profile">
         <div class="profile-desc">
           <div class="profile-pic">
             <div class="count-indicator">
-              @if (auth()->user()->avatar)
               <img class="img-xs rounded-circle" src="{{ asset('storage/' . auth()->user()->avatar) }}" alt="">
-              @else
-              <img class="img-xs rounded-circle" src="https://ui-avatars.com/api/?name={{ auth()->user()->name }}&background=random&color=random" alt="">
-              @endif
               {{-- <span class="count bg-success"></span> --}}
             </div>
             <div class="profile-name">
               <h5 class="mb-0 font-weight-normal">{{  auth()->user()->name }}</h5>
-              <span>Member</span>
+              {{-- <span>Member</span> --}}
             </div>
           </div>
           {{-- <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
@@ -59,7 +55,7 @@
         </div>
       </li>
       <li class="nav-item nav-category">
-        <span class="nav-link">Member Menu</span>
+        <span class="nav-link">Menu Anggota</span>
       </li>
       <li class="nav-item menu-items {{ Request::is('dashboard') ? 'active' : '' }}">
         <a class="nav-link" href="/dashboard">
@@ -74,13 +70,13 @@
           <span class="menu-icon">
             <i class="mdi mdi-table-large"></i>
           </span>
-          <span class="menu-title">Post Management</span>
+          <span class="menu-title">Posting Manajemen</span>
           <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"><a class="nav-link {{ Request::is('dashboard/posts') ? 'active' : '' }}" href="/dashboard/posts">All Post</a></li>
-            <li class="nav-item"> <a class="nav-link {{ Request::is('dashboard/posts/create') ? 'active' : '' }}" href="/dashboard/posts/create">Create Post</a></li>
+            <li class="nav-item"><a class="nav-link {{ Request::is('dashboard/posts') ? 'active' : '' }}" href="/dashboard/posts">Semua Postingan</a></li>
+            <li class="nav-item"> <a class="nav-link {{ Request::is('dashboard/posts/create') ? 'active' : '' }}" href="/dashboard/posts/create">Buat Postingan</a></li>
           </ul>
         </div>
       </li>
@@ -89,7 +85,7 @@
           <span class="menu-icon">
             <i class="mdi mdi-file-document-box"></i>
           </span>
-          <span class="menu-title">Back To Home</span>
+          <span class="menu-title">Kembali Ke HOME</span>
         </a>
       </li>
       {{-- <li class="nav-item menu-items">

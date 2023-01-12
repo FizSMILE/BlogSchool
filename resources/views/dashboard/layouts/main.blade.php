@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>BN | Dashboard</title>
+    <title>BS | Dashboard</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="/assetsDB/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="/assetsDB/vendors/css/vendor.bundle.base.css">
@@ -49,14 +49,14 @@ aria-hidden="true">
 <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Yakin untuk keluar?</h5>
         </div>
-        <div class="modal-body">Apakah yakin untuk logout?</div>
+        <div class="modal-body">Apakah yakin untuk keluar?</div>
         <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Batal</button>
             <form action="/logout" method="post">
               @csrf
-              <button class="btn btn-danger" type="submit">Logout</button>
+              <button class="btn btn-danger" type="submit">Keluar</button>
             </form>
         </div>
     </div>
@@ -68,8 +68,7 @@ aria-hidden="true">
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright &copy; FizSMILE 2022</span>
             </div>
           </footer>
           <!-- partial -->

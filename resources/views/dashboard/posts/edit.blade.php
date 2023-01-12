@@ -11,7 +11,7 @@
               <div class="row align-items-center"> 
                 <div class="col-5 col-sm-7 col-xl-8 p-0">
                   <h2 class="mb-1 mt-4 mx-5 mb-sm-0">Hello , {{ auth()->user()->name }}</h2>
-                  <h4 class="mb-4 mx-5 font-weight-normal d-none d-sm-block">This Your All Post</h4>
+                  <h4 class="mb-4 mx-5 font-weight-normal d-none d-sm-block">Ini Adalah Halaman Edit Postingan</h4>
                 </div>
               </div>
             </div>
@@ -23,7 +23,7 @@
       @method('put')
         @csrf
       <div class="mb-3">
-        <label for="title" class="form-label">Title</label>
+        <label for="title" class="form-label">Judul</label>
         <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" name="title" required autofocus value="{{ old('title', $post->title) }}">
         @error('title')
         <div class="invalid-feedback">
@@ -41,7 +41,7 @@
         @enderror
       </div>
       <div class="mb-3">
-        <label for="image" class="form-label">Post Image</label>
+        <label for="image" class="form-label">Upload Gambar</label>
         <input type="hidden" name="oldImage" value="{{ $post->image }}">
         @if ($post->image)
         <img src="{{ asset('storage/' . $post->image) }}" class="img-preview img-fluid mb-3 col-sm-5 d-block">
@@ -56,7 +56,7 @@
               @enderror
       </div>
       <div class="mb-3">
-        <label for="category" class="form-label">Category</label>
+        <label for="category" class="form-label">Kategori</label>
         <select class="form-select" name="category_id" >
             @foreach ($categories as $category)
             @if(old('category_id', $post->category_id) == $category->id)
@@ -68,7 +68,7 @@
           </select>
       </div>
       <div class="mb-3 ">
-        <label for="body" class="form-label">Body</label>
+        <label for="body" class="form-label">Konten Postingan</label>
         <input id="body" type="hidden" name="body" value="{{ old('body', $post->body) }}">
         <trix-editor input="body"></trix-editor>
         @error('body')
@@ -77,7 +77,7 @@
         </p>
         @enderror
       </div>
-      <button type="submit" class="btn btn-primary">Update Post</button>
+      <button type="submit" class="btn btn-primary">Update Postingan</button>
     </form>
 </div>
     </div>

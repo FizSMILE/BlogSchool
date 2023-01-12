@@ -10,8 +10,8 @@
               <div class="row align-items-center">
                 
                 <div class="col-5 col-sm-7 col-xl-8 p-0">
-                  <h2 class="mb-1 mt-4 mx-5 mb-sm-0">Hello , {{ auth()->user()->name }}</h2>
-                  <h4 class="mb-4 mx-5 font-weight-normal d-none d-sm-block">Welcome Back to your dashboard</h4>
+                  <h2 class="mb-1 mt-4 mx-5 mb-sm-0">Hallo , {{ auth()->user()->name }}</h2>
+                  <h4 class="mb-4 mx-5 font-weight-normal d-none d-sm-block">Selamat Datang Di Dashboard Anda</h4>
                 </div>
     
               </div>
